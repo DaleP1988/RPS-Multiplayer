@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+    
+<div class="jumbotron">
+    <h1 class="display-3">Rock, Paper, Scissors</h1>
+    <p class="lead">A Game for Multiple Players</p>
+    <hr class="my-2">
+    <p>Enter your name to begin. Click on your box to make a move. After each player has made three clicks, a winner will be revealed!</p>
+    <p>Have fun! Make it exciting. Egg your opponent on using the Chat Box below!</p>
+</div>
+
+
+<div class="form-group" id="Welcome">
+  <label for="">
+  </label>
+  <input type="name"
+      class="form-control form-control-sm|lg" name="" id="" aria-describedby="helpId" placeholder="Name">
+    <button type="submit" class="btn btn-light">Submit</button>
+</div>
+
+<div id="Playerstatus"></div>
+
+
+<div class="card-columns">
+    <div class="card">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title" id="">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title" id="">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
+    <div class="card">
+            <img class="card-img-top" src="holder.js/100x180/" alt="">
+            <div class="card-body">
+                <h4 class="card-title" id="">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+</div>
+
+  
+<div class="container">
+        <div class="row">
+            <!-- inicio de la caja de chat con bootstrap -->
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-comment"></span> Chat
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="chat"> </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="Message" type="text" class="form-control input-sm" placeholder="Fire away!" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm" id="btnMessage" >
+                                   Message</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   bootstrap: MAY NEED A DIFFERENT CHAT -->
+        </div>
+    </div>
+      <!-- template chat items  (Oculto: para agarrar un clon y llenarlo e insertar en el chat)-->
+           <li style="display:none" id="plantilla" class="left clearfix">
+               <span class="chat-img pull-left">
+                 <img src="http://placehold.it/50/55C1E7/fff&text=U"class="img-circle">
+               </span>
+                <div class="chat-body clearfix">
+                        <div class="header">
+                          <strong class="primary-font Nombre" >Jack Sparrow</strong> 
+                            <small class="pull-right text-muted">
+                            <span class="glyphicon glyphicon-asterisk Tiempo">
+                            </span> 12/02/2015 </small>
+                        </div>
+                            <p class="Mensaje">
+                                   Mensaje
+                            </p>
+                    </div>
+            </li>
+           
+         
+
+            <footer> &copy; Copyright 2018 Dale Padelford
+            </footer>
+
+</body>
+
+<script type="javascript" href="javascript.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                
+
+
+
+
+
+</html>
